@@ -1,0 +1,21 @@
+{
+  "name": "singlegram.pl - Dyskretne Randki Online",
+  "short_name": "singlegram.pl",
+  "description": "Portal randkowy z naciskiem na dyskrecję i anonimowość rozmów",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#ff6b35",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.jpg",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
