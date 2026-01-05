@@ -37,10 +37,11 @@ export const metadata: Metadata = {
     siteName: "singlegram.pl",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://singlegram.pl/og-image.png",
         width: 1200,
         height: 630,
         alt: "singlegram.pl - Dyskretny portal randkowy",
+        type: "image/png",
       },
     ],
     locale: "pl_PL",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "singlegram.pl - Dyskretne Randki Online",
     description: "Poznaj nowych ludzi w 100% dyskretnie i anonimowo. Portal randkowy z naciskiem na prywatność.",
-    images: ["/og-image.jpg"],
+    images: ["https://singlegram.pl/og-image.png"],
   },
   robots: {
     index: true,
@@ -65,10 +66,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon-16x16.jpg", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.jpg", sizes: "32x32", type: "image/png" },
     ],
-    apple: "/apple-touch-icon.jpg",
+    apple: [{ url: "/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/safari-pinned-tab.svg",
+        color: "#ff6b35",
+      },
+    ],
   },
   manifest: "/site.webmanifest",
     generator: 'v0.app'
